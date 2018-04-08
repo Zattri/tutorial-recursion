@@ -7,10 +7,10 @@ def countdown(x):
 
 
 def factorial(x):
-    if x > 1:
-        return x * factorial(x-1)
-    else:
+    if x == 0:
         return 1
+    else:
+        return x * factorial(x - 1)
 
 def tailFactorial(x, acc=1):
     if x == 0:
@@ -79,9 +79,6 @@ def msort3(x):
     result += z[j:]
     return result
 
-# Merge sort example - This code was taken from someone else because it's late and I'm lazy
-#numList = [34, 30, 75, 27, 8, 58, 10, 1, 59, 25]
-#print(msort3(numList))
 
 # Countdown Example - Counts down from the input number to 0
 # countdown(10)
@@ -107,3 +104,6 @@ def msort3(x):
 #treeSearch(rootNode, 16)
 
 
+# Merge sort example - This code was taken from someone else because it's late and I'm lazy
+#numList = [34, 30, 75, 27, 8, 58, 10, 1, 59, 25]
+#print(msort3(numList))
